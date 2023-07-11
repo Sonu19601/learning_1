@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 2;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+  background: rgb(39, 15, 61);
+  color: rgb(14, 14, 14);
+}
+.booklist {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 5rem auto;
+  display: grid;
+  gap: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .booklist {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.book {
+  border-radius: 1rem;
+  background-color: bisque;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+.book img {
+  width: 100%;
+  object-fit: cover;
+}
+.book h2 {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+.index {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background: white;
+}
